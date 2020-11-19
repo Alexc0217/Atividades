@@ -1,18 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
-// exercicio 03
-/*  Nome		                            RA
-    Abdallah Yaziji               			21426931
-    Alex Costa de Moura     				21420700
-    Pedro Henrique Molonhoni 				21263734
-    Rafael Esposo Valente			 		21384176
-    Vitor Rodrigues Araujo 					21464490
-*/
+// ex03
 
 
-void receberValores(int *valores, int quantidade); // função que recebe os valores
-int checarMaior(int *valores, int maior, int quantidade); // função para checar qual o maior valor
-int checarOcorrencias(int *valores, int vezes, int *maior); // função para checar quantas vezes ocorreu esse valor no programa.
+void receberValores(int *valores, int quantidade); // funÃ§Ã£o que recebe os valores
+int checarMaior(int *valores, int maior, int quantidade); // funÃ§Ã£o para checar qual o maior valor
+int checarOcorrencias(int *valores, int vezes, int *maior); // funÃ§Ã£o para checar quantas vezes ocorreu esse valor no programa.
 
 int main(){
     int i,maior = 0, vezes = 0, quantidade; // variaveis necessarias para o funcionamento do programa.
@@ -28,7 +21,7 @@ int main(){
     return 0;
 }
 
-void receberValores(int *valores, int quantidade){ // escopo da função que recebe os valores
+void receberValores(int *valores, int quantidade){ // escopo da funÃ§Ã£o que recebe os valores
     int i;
     printf("\nDigite %d valores. \n",quantidade);
     for(i=0; i<quantidade; i++){
@@ -38,7 +31,7 @@ void receberValores(int *valores, int quantidade){ // escopo da função que receb
     }
 }
 
-int checarMaior(int *valores, int maior, int quantidade){ // escopo da função que checa o maior
+int checarMaior(int *valores, int maior, int quantidade){ // escopo da funÃ§Ã£o que checa o maior
     int i;
     for(i=0; i<quantidade; i++){
         if(*valores > maior){
@@ -52,7 +45,7 @@ int checarMaior(int *valores, int maior, int quantidade){ // escopo da função qu
     return maior; // retornando o maior
 }
 
-int checarOcorrencias(int *valores, int vezes, int *maior){ // escopo da função que checa quantas ocorrencias teve
+int checarOcorrencias(int *valores, int vezes, int *maior){ // escopo da funÃ§Ã£o que checa quantas ocorrencias teve
     int i;
     for(i=0; i<5; i++){
         if(*valores == *maior){
